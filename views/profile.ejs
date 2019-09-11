@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/../assets/styles.css" rel="stylesheet" type ="text/css"/>
+	</head>
+	<body>
+		<% include nav.ejs %>
+		<h1>Welcome to <%=person%>'s profile</h1>
+		<p><strong><%=data.age%></strong></p>
+		<p>This is a website</p>
+		<h2>other</h2>
+		<ul><%data.other.forEach(function(item){ %>
+			<li><%=item%></li>
+		<%})%>
+	</body>
+</html>
